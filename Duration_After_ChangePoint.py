@@ -80,7 +80,7 @@ def activity_count(index0, index1):
 			for i in range(majority_index + 1, len(sorted_counted_act)):
 				if sorted_counted_act[i][1] == value_of_majoirty:   ## more than one majority label. 
 					index1 += 1
-					activity_count(index0, index1)
+					activity_count(index0, index1)   ## repeate until there is one majority. 
 				return (index1, sorted_counted_act[majority_index][0])
 
 
